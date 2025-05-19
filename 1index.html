@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<form>
+    <label for="2011">Enter your password CLICK SUMIT TO ENTER: </label>
+    <input type="password" id="2011">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "2011";
+        var password = document.getElementById("2011").value;
+        if (password == confirmPassword) {
+             window.location="https://sites.google.com/view/factoryclassroom101/home";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
